@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My name is María and this app is an example or first app created with Ruby on Rails.
+In this excercise I cover:
 
-Things you may want to cover:
 
-* Ruby version
+* Understand purpose of version control software (Git)
 
-* System dependencies
+* How web developers use GitHub to track changes for collaborative projects
 
-* Configuration
+* Install and configure Git to create a remote repository in GitHub
 
-* Database creation
+* Set a master branch
 
-* Database initialization
+* Commit changes on their local server (Git commit -m “comment”)
 
-* How to run the test suite
+* Push changes to repository on GitHub using Git workflow and best practices
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Troubleshoot common Git errors using the terminal and external web resources
