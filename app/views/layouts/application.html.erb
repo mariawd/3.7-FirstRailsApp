@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Testa</title>
+    <title>MyNewApp</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", simple_pages_about_path %></li>
+        <li><%= link_to "Contact", simple_pages_contact_path %></li>
+      </ul>
+    </nav>
+
     <%= yield %>
+    <br>
+    <footer>
+      &copy; 2018 Bike Berlin
+    </footer>
+
   </body>
 </html>
