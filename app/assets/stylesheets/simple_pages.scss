@@ -1,3 +1,88 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// General style
+body{
+  background: #b4dfe5;
+}
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+h1  {
+  font-weight: bold;
+  color: #1248ba;
+  text-align: center;
+}
+
+footer {
+  font-weight: bold;
+  color: #117ec1;
+  text-align: center;
+  padding-top: 2%;
+}
+
+//Home page
+#home ul {
+  padding-right: 20px;
+  float: right;
+  color: black;
+  font-weight: bold;
+}
+
+#home h2 {
+  color: black;
+  text-align: center;
+}
+
+#home {
+  background-color: #b4dfe5;
+}
+
+.my-image {
+  width: 100%;
+  height: 50%;
+  display: center;
+  padding-top: 50px;
+  padding-right: 270px;
+  padding-left: 270px;
+  padding-bottom: 40px;
+  height: 80vh;
+
+}
+//About page
+
+#about {
+  background-color: #white;
+}
+#about h1, h2, h3 {
+  font-weight: bold;
+  text-align: center;
+}
+#about ul {
+  float: right;
+  color: black;
+}
+
+
+//Contact page
+#contact {
+  background-color: lightblue;
+  font-size: 2em;
+}
+#contact ul {
+  float: right;
+}
+#contact h1 {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+p {
+  padding-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}

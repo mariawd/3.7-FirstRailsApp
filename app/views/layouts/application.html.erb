@@ -2,18 +2,26 @@
 <html>
   <head>
     <title>MyNewApp</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- For third-party libraries like the Bootstrap framework, we need to link to them manually -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>    <!--The styles added in the .scss files will automatically be applied to the application.css file, which acts like a “master” CSS file, with this line of code -->
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!--We'll link our Bootstrap JavaScript file after the javascript_include_tag because Bootstrap depends on jQuery, which is loaded with all the other JavaScript.-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!--meta tag that will let my app react responsively on mobile phones -->
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", simple_pages_about_path %></li>
-        <li><%= link_to "Contact", simple_pages_contact_path %></li>
-      </ul>
+    <nav class='navbar navbar-default'>
+        <div class= 'collapse navbar-collapse navbar-ex1-collapse'>
+          <ul class= 'nav navbar-nav'>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", simple_pages_about_path %></li>
+            <li><%= link_to "Contact", simple_pages_contact_path %></li>
+          </ul>
+        </div>
     </nav>
 
     <%= yield %>

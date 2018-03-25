@@ -1,6 +1,6 @@
 # README
 
-My name is María and this app is an example or first app created with Ruby on Rails.
+My name is María and this is my first app created with Ruby on Rails.
 In this excercise I cover:
 
 
