@@ -1,0 +1,108 @@
+/* line 6, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+body {
+  background: #b4dfe5;
+}
+
+/* line 9, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+/* line 14, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-weight: bold;
+  color: #1248ba;
+  text-align: center;
+}
+
+/* line 20, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+footer {
+  font-weight: bold;
+  color: #117ec1;
+  text-align: center;
+  padding-top: 2%;
+}
+
+/* line 28, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#home ul {
+  padding-right: 20px;
+  float: right;
+  color: black;
+  font-weight: bold;
+}
+
+/* line 35, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#home h2 {
+  color: black;
+  text-align: center;
+}
+
+/* line 40, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#home {
+  background-color: #b4dfe5;
+}
+
+/* line 44, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+.my-image {
+  display: block;
+  margin: auto;
+}
+
+/* line 50, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#about {
+  background-color: #white;
+}
+
+/* line 53, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#about h1, h2, h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 57, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#about ul {
+  float: right;
+  color: black;
+}
+
+/* line 64, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#contact {
+  background-color: lightblue;
+  font-size: 2em;
+}
+
+/* line 68, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#contact ul {
+  float: right;
+}
+
+/* line 71, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+#contact h1 {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+/* line 77, C:/Users/MASOFOL/Desktop/Rails/mynewapp/app/assets/stylesheets/simple_pages.scss */
+p {
+  padding-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
