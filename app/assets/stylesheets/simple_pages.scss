@@ -41,16 +41,9 @@ footer {
   background-color: #b4dfe5;
 }
 
-.my-image {
-  width: 100%;
-  height: 50%;
-  display: center;
-  padding-top: 50px;
-  padding-right: 270px;
-  padding-left: 270px;
-  padding-bottom: 40px;
-  height: 80vh;
-
+.my-image { //how to center images with css
+  display: block;
+  margin:auto;
 }
 //About page
 
