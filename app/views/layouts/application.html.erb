@@ -13,22 +13,52 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
-    <nav class='navbar navbar-default'>
-        <div class= 'collapse navbar-collapse navbar-ex1-collapse'>
+  <body class="anchor-top">
+
+    <nav class="'navbar navbar-inverse navbar-fixed-top">  <!-- Fixed navbar -->
+
+      <div class="container-fluid navbar-main">
+
+        <div class= "navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse-connect" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to 'möbi', home_path, class: "navbar-brand" %>
+        </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="nav-collapse-connect">
+
           <ul class= 'nav navbar-nav'>
             <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "About", simple_pages_about_path %></li>
             <li><%= link_to "Contact", simple_pages_contact_path %></li>
           </ul>
-        </div>
-    </nav>
 
-    <%= yield %>
-    <br>
-    <footer>
-      &copy; 2018 Bike Berlin
-    </footer>
+        </div><!-- end navbar-collapse -->
 
+      </div><!-- end container-fluid -->
+
+    </nav><!-- end nav class navbar-fixed-top -->
+
+
+  <%= yield %>
+
+  <div class="anchor-bottom"></div>
+  <footer class = "footer">
+
+      <div class="container-fluid">
+
+         <div class="col-sm-12 footer-baseline">
+           &copy; 2018 Bike Berlin
+         </div>
+
+      </div>
+
+  </footer>
+  
   </body>
 </html>
