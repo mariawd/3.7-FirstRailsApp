@@ -5,9 +5,12 @@
 // General styles
 body{
   background: #b4dfe5;
+  width: 100%
 }
-.navbar-toggle {
-  padding: 10px;
+
+.container {
+  margin: 0 auto;
+  width: 100%;
 
 }
 
@@ -19,9 +22,19 @@ h1  {
 
 footer {
   font-weight: bold;
-  color: #117ec1;
+  background-color: grey;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  padding:10px;
+  display: block;
+  overflow: auto;
   text-align: center;
-  padding-top: 2%;
+  float: left;
+  margin-top: 50px;
+  position: absolute;
+
 }
 
 //Home page
