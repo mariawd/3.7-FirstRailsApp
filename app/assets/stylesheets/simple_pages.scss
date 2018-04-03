@@ -6,10 +6,10 @@
 body{
   background: #b4dfe5;
   width: 100%
+  min-height: 100%;
 }
 
 .container {
-  margin: 0 auto;
   width: 100%;
 
 }
@@ -20,7 +20,7 @@ h1  {
   text-align: center;
 }
 
-footer {
+.footer {
   font-weight: bold;
   background-color: grey;
   color: white;
