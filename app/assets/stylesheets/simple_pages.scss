@@ -3,10 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // General styles
-body{
+html, body{
   background: #b4dfe5;
+  margin: 0px;
   width: 100%
-  min-height: 100%;
+
 }
 
 .container {
