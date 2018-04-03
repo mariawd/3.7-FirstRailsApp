@@ -10,6 +10,7 @@ body{
 }
 
 .container {
+  margin: 0 auto;
   width: 100%;
 
 }
@@ -19,6 +20,36 @@ h1  {
   color: #1248ba;
   text-align: center;
 }
+
+/***********************
+         FOOTER
+************************/
+#container-footer {
+  min-height: 50px;
+  width: 100%;
+  padding: 20px 70px 5px 50px;
+  color: rgb(255, 255, 255);
+  background-color: #222831;
+}
+
+#container-footer a {
+  display: inline-block;
+  float: left;
+}
+
+#container-footer div {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+#container-footer p {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  color: white;
+}
+
 
 .footer {
   font-weight: bold;
