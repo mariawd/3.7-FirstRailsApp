@@ -22,41 +22,12 @@ h1  {
   text-align: center;
 }
 
-/***********************
-         FOOTER
-************************/
-#container-footer {
-  min-height: 50px;
-  width: 100%;
-  padding: 20px 70px 5px 50px;
-  color: rgb(255, 255, 255);
-  background-color: #222831;
-}
 
-#container-footer a {
-  display: inline-block;
-  float: left;
-}
-
-#container-footer div {
-  display: inline-block;
-  text-align: left;
-  vertical-align: top;
-}
-
-#container-footer p {
-  display: inline-block;
-  float: right;
-  vertical-align: top;
-  color: white;
-}
-
-
-footer {
-  font-weight: bold;
+#footer {
   background-color: grey;
   color: white;
   width: 100%;
+  position: fixed;
   bottom: 0;
   height: 50px;
   padding:10px;
@@ -65,7 +36,7 @@ footer {
   text-align: center;
   float: left;
   margin-top: 50px;
-  position: absolute;
+  font-weight: bold;
 
 }
 
