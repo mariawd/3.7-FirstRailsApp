@@ -5,6 +5,7 @@
 // General styles
 html, body{
   background: #b4dfe5;
+  margin: 0 px;
   width: 100%;
   min-height: 100%;
 
@@ -15,6 +16,11 @@ html, body{
   width: 100%;
 
 }
+
+.navbar {
+   background-color: rgba(41, 43, 55, 0.5);
+   border: none;
+ }
 
 h1  {
   font-weight: bold;
@@ -30,7 +36,7 @@ h1  {
   position: fixed;
   bottom: 0px;
   height: 50px;
-  padding:10px;
+  padding-top:10px;
   display: block;
   overflow: auto;
   text-align: center;
@@ -46,7 +52,7 @@ h1  {
   position: fixed;
   bottom: 0px;
   height: 50px;
-  padding:10px;
+  padding-top:10px;
   display: block;
   overflow: auto;
   text-align: center;
