@@ -4,7 +4,7 @@
 
 // General styles
 html, body{
-  background: #b4dfe5;
+  background: white;
   margin: 0 px;
   width: 100%;
   min-height: 100%;
@@ -16,9 +16,10 @@ html, body{
 }
 
 .navbar {
-   background-color: rgba(41, 43, 55, 0.5);
+
    border: none;
    font-weight: bold;
+
 
  }
 
@@ -29,7 +30,7 @@ h1  {
 }
 
 #footer {
-  background-color: grey;
+  background-color: #242323;
   color: white;
   width: 100%;
   position: fixed;
@@ -44,21 +45,6 @@ h1  {
   font-weight: bold;
 }
 
-.footer {
-  background-color: grey;
-  color: white;
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-  height: 50px;
-  padding-top:10px;
-  display: block;
-  overflow: auto;
-  text-align: center;
-  float: left;
-  margin-top: 50px;
-  font-weight: bold;
-}
 
 //Home page
 #home ul {
