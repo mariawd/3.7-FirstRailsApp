@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // General styles
+* {
+  box-sizing: border-box;
+  /* border: solid #D64078 2px; */
+}
+
 html, body{
   background: white;
   margin: 0 px;
@@ -16,11 +21,8 @@ html, body{
 }
 
 .navbar {
-
    border: none;
    font-weight: bold;
-
-
  }
 
 h1  {
@@ -99,4 +101,119 @@ p {
   padding-top: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+/* Product tiles */
+
+.list-content img {
+  align-self: center;
+
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  padding: 0.5em;
+	width: 100%;
+}
+
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
+}
+
+.list-content {
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 1em;
+   width: 100%;
+}
+
+.list-content strong {
+   margin-top: auto;
+}
+
+/* Styling product images */
+
+.img-product {
+  padding: 10px;
+  max-height: 400px;
+  // object-fit: cover;
+  // margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .img-product {
+    max-height: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-product {
+    max-height: 265px;
+  }
+}
+
+/* Carousel */
+
+.carousel-inner {
+  background-color: white;
+}
+
+.carousel-inner > .item > img{
+margin:auto;
+padding: 25px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background: none;
+  opacity: 1;
+}
+
+.carousel-control.left:hover,
+.carousel-control.right:hover {
+  background: none;
+  opacity: 1;
+}
+
+.carousel-control .glyphicon {
+  color: #182628;
+  opacity: 1;
+}
+
+.carousel-control .glyphicon:hover {
+  color: #57ba98;
+}
+
+.carousel-indicators li {
+  background-color: #182628;
+}
+
+.carousel-indicators li:hover {
+  background-color: #43c5f6;
+}
+
+.carousel-indicators li.active {
+  background-color: #43c5f6;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    text-shadow: none;
+    margin-bottom: 10px;
 }
