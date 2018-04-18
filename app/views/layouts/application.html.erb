@@ -20,7 +20,7 @@
       <header>
 
         <!-- Navigation bar starts here -->
-        <nav class="navbar navbar-inverse" navbar-fixed-top role="navigation"> <!--Modify the look of the navbar from grey to black-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> <!--Modify the look of the navbar from grey to black-->
 
           <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,7 +32,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button><!-- end button -->
-                <a class="navbar-brand" href="#">Bike Berlin</a> <!-- Brand name for the navbar -->
+                <%= link_to "Bike Berlin", simple_pages_index_path, id: "home-link", class: "navbar-brand" %><!-- Brand name for the navbar -->
 
             </div><!-- end div class navbar-header -->
 

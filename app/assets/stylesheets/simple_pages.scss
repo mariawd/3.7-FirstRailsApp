@@ -135,21 +135,16 @@ p {
 
 .list-content {
    display: flex;
-   flex-direction: column;
    background-color: #fff;
    padding: 1em;
    width: 100%;
-}
-
-.list-content strong {
-   margin-top: auto;
 }
 
 /* Styling product images */
 
 .img-product {
   padding: 10px;
-  max-height: 400px;
+  max-height: 500px;
   // object-fit: cover;
   // margin: 0 auto;
 }
@@ -216,4 +211,26 @@ padding: 25px;
     right: auto;
     text-shadow: none;
     margin-bottom: 10px;
+}
+
+/* ORDERS SHOW */
+
+.order_information strong {
+	font-size: 1.2em;
+}
+
+.order_information {
+	text-align: left;
+}
+.order_information h2 {
+	margin-bottom: 100px;
+}
+
+.order-info {
+	border: 3px solid black;
+	width: 250px;
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 10px;
+  text-align: left;
 }
