@@ -31,6 +31,13 @@ h1  {
   text-align: center;
 }
 
+#headline {
+//  background-color: #197278;
+  margin-top: 0;
+  padding: 60px;
+  width: 100%;
+}
+
 #footer {
   background-color: #242323;
   color: white;
@@ -144,8 +151,7 @@ p {
 
 .img-product {
   padding: 10px;
-  max-height: 500px;
-  // object-fit: cover;
+  max-height: 400px;
   // margin: 0 auto;
 }
 

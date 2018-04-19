@@ -1,7 +1,21 @@
 <div class="container">
-  <h2>Order Information</h2>
-  <strong>Order ID: </strong><%= @order.id %>
-  <strong>Product Name: </strong><%= @order.product.name %>
-  <strong>Product Price: </strong><%= number_to_currency(@order.product.price.to_f) %>
-  <strong>Total Price: </strong><%= number_to_currency(@order.total.to_f) %>
+  <div class="row">
+    <div class="col-md-6">
+
+      <h1 id="headline">Order Information</h1>
+
+      <div class="container">
+
+        <strong>Order ID: </strong><%= @order.id %>
+        <strong>Product Name: </strong><%= @order.product.name %>
+        <strong>Product Price: </strong><%= number_to_currency(@order.product.price.to_f) %>
+        <strong>Total Price: </strong><%= number_to_currency(@order.total.to_f) %>
+      </div>
+
+    </div>
+  </div>
 </div>
+
+<br>
+<br>
+<%= link_to 'Back', orders_path %>
