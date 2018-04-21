@@ -21,8 +21,8 @@ html, body{
 }
 
 .navbar {
-   border: none;
-   font-weight: bold;
+  border: none;
+  font-weight: bold;
  }
 
 h1  {
@@ -131,7 +131,7 @@ p {
 
 @media all and (min-width: 40em) {
   .list-item {
-    width: 50%;
+  width: 50%;
   }
 }
 @media all and (min-width: 60em) {
@@ -174,8 +174,8 @@ p {
 }
 
 .carousel-inner > .item > img{
-margin:auto;
-padding: 25px;
+  margin:auto;
+  padding: 25px;
 }
 
 .carousel-control.left,
@@ -212,11 +212,11 @@ padding: 25px;
 }
 
 .carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto;
-    text-shadow: none;
-    margin-bottom: 10px;
+  position: relative;
+  left: auto;
+  right: auto;
+  text-shadow: none;
+  margin-bottom: 10px;
 }
 
 /* ORDERS SHOW */
