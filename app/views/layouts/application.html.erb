@@ -49,12 +49,10 @@
 
             <%= form_tag(products_path, method: "get", class: "navbar-form navbar-right") do %>
 
-+
-+              <%= text_field_tag(:q, "", type: "text", class: "form-control", placeholder: "search text") %>
+++              <%= text_field_tag(:q, "", type: "text", class: "form-control", placeholder: "search text") %>
 +              <%= submit_tag("Search", class: "btn btn-default") %>
 
 +              <% end %>
-
 
            </div><!-- end div class navbar-collapse -->
 
