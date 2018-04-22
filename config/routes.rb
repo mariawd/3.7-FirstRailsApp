@@ -11,8 +11,8 @@ Rails.application.routes.draw do
 
   get 'products/index'
 
-  #root 'simple_pages#landing_page'
-   root 'simple_pages#index'
+  root 'simple_pages#landing_page'
+  #root 'simple_pages#index'
 
   resources :orders, only: [:index, :show, :create, :destroy]
 

@@ -32,27 +32,30 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button><!-- end button -->
-                <%= link_to "Bike Berlin", simple_pages_index_path, id: "home-link", class: "navbar-brand" %><!-- Brand name for the navbar -->
+                <%= link_to "Bike Berlin", simple_pages_landing_page_path, id: "home-link", class: "navbar-brand" %><!-- Brand name for the navbar -->
 
             </div><!-- end div class navbar-header -->
 
              <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-1">
 
-            <ul class="nav navbar-nav">
-          <!-- <li><%= link_to "Home", root_path %></li> -->
-               <li><%= link_to "Home", simple_pages_landing_page_path %></li>
-               <li><%= link_to "Products", products_path %></li>
-               <li><%= link_to "About", simple_pages_about_path %></li>
-               <li><%= link_to "Contact", simple_pages_contact_path %></li>
-            </ul>
+              <ul class="nav navbar-nav navbar-right">
 
-            <%= form_tag(products_path, method: "get", class: "navbar-form navbar-right") do %>
+                  <li><%= link_to "Home", simple_pages_index_path %></li>
+                  <li><%= link_to "About", simple_pages_about_path %></li>
+                  <li><%= link_to "Products", products_path %></li>
+                  <li><%= link_to "Orders", orders_path %></li>
+                  <li><%= link_to "Contact", simple_pages_contact_path %></li>
 
-++              <%= text_field_tag(:q, "", type: "text", class: "form-control", placeholder: "search text") %>
-+              <%= submit_tag("Search", class: "btn btn-default") %>
 
-+              <% end %>
+                  <li class="search-form"><!-- Search Form -->
+                    <%= form_tag(products_path, method: "get", class: "navbar-form navbar-right") do %>
+                    <%= text_field_tag(:q, "", type: "text", class: "form-control", placeholder: "search text") %>
+                    <%= submit_tag("Search", class: "btn btn-primary") %>
+                    <% end %>
+                  </li> <!-- end list class search form -->
+
+              </ul><!-- end navbar- -->
 
            </div><!-- end div class navbar-collapse -->
 
