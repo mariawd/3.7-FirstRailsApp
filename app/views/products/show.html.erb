@@ -17,9 +17,17 @@
 
     <h4><%= number_to_currency(@product.price) %></h4>
 
-    <!-- higest rating product -->
-    <h4 class="product-info-text"> Highest Rating: <%= @product.highest_rating_comment %></h4>
+    <!-- higest rating product
+    <h4 class="product-info-text"> Highest Rating: <%= @product.highest_rating_comment %></h4>-->
     <br >
+
+    <h4>Highest Rating:
+    <div class="rated" data-score="<%= @product.highest_rating_comment.try(:rating) %>"></div>
+    </h4>
+
+    <h4>Lowest Rating:
+    <div class="rated" data-score="<%= @product.lowest_rating_comment.try(:rating) %>"></div>
+    </h4>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
