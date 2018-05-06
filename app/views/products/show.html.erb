@@ -1,35 +1,42 @@
 <div class="container-fluid">
-<h2 id="headline"><%= @product.name %></h2>
+  <h2 id="headline"><%= @product.name %></h2>
 
-<div class="row" data-product-id="<%= @product.id %>">
-  <div class="col-sm-12 col-md-4">
-    <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: @product.image_url) %>
-  </div><!-- /image thumbnail -->
+  <div class="row" data-product-id="<%= @product.id %>">
 
-  <div class="col-sm-12 col-md-8">
-    <h4>
-      <%= @product.description %>
-    </h4>
-    <h4>
-      <strong>Colour: </strong>
-      <%= @product.colour %>
-    </h4>
+    <div class="col-sm-12 col-md-4">
+      <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: @product.image_url) %>
+      <%= render 'comments' %>
+    </div><!-- End div class col -->
 
-    <h4><%= number_to_currency(@product.price) %></h4>
+    <div class="col-sm-12 col-md-8">
+      <h4>
+        <%= @product.description %>
+      </h4>
+      <h4>
+        <strong>Colour: </strong>
+        <%= @product.colour %>
+      </h4>
 
-    <!-- higest rating product
-    <h4 class="product-info-text"> Highest Rating: <%= @product.highest_rating_comment %></h4>-->
-    <br >
+      <h4><%= number_to_currency(@product.price) %></h4>
 
-    <h4>Highest Rating:
-    <div class="rated" data-score="<%= @product.highest_rating_comment.try(:rating) %>"></div>
-    </h4>
+      <hr>
 
-    <h4>Lowest Rating:
-    <div class="rated" data-score="<%= @product.lowest_rating_comment.try(:rating) %>"></div>
-    </h4>
+      <!-- Adding a review -->
+      <%= render 'new_comment' %>
+      <!-- higest rating product
+      <h4 class="product-info-text"> Highest Rating: <%= @product.highest_rating_comment %></h4>-->
+      <br >
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+      <h4>Highest Rating:
+      <div class="rated" data-score="<%= @product.highest_rating_comment.try(:rating) %>"></div>
+      </h4>
 
-</div>
+      <h4>Lowest Rating:
+      <div class="rated" data-score="<%= @product.lowest_rating_comment.try(:rating) %>"></div>
+      </h4>
+
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+
+  </div><!-- End div class container-fluid -->
+</div><!-- End div class container-fluid -->

@@ -1,15 +1,17 @@
-<%= link_to(product, {class: "list-item"}) do %>
+<% cache product do %>
+<div class="col-lg-4 col-sm-12 product-container">
+  <% logger.debug "Product: #{product.name}" %>
+    <%= link_to ('
+    <div class="product-container-link"> </div>').html_safe, product_path(product)
+    %>
 
-<div class="col-sm-2 col-md-4">
-
-    <div class= "list-content">
-      <%= render partial: "productimage", locals: {product: product} %>
-        <h2><%= product.name %></h2>
-        <p>Colour: <%= product.colour %></p>
-        <p><%= product.description %></p>
-        <p>Price € <%= product.price %></p>
-    </div>
-
+  <div class="product-img-container">
+    <%= link_to image_tag(product.image_url, class: "img-responsive"), product_path(product) %>
+  </div>
+  <div class="product-title">
+    <h3><%= product.name %></h3>
+    <p><%= number_to_currency(product.price, unit: "€") %></p>
   </div>
 
+</div>
 <% end %>

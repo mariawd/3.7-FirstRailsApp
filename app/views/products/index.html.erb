@@ -1,7 +1,7 @@
-<p id="notice"><%= notice %></p>
-<h1 id="headline">Products</h1>
-
 <div class="container-fluid" id="catalog">
+
+  <p id="notice"><%= notice %></p>
+  <h1 id="headline">Products</h1>
 
   <div class="row">
 
@@ -11,7 +11,10 @@
 
   </div><!-- end div class row -->
 
-</div><!-- end div class container -->
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<% if current_user && current_user.admin? %>
+    <%= link_to 'New Product', new_product_path , class: "btn btn-default" %>
+  <%end%>
+
+</div><!-- end div class container -->
