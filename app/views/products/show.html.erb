@@ -1,42 +1,54 @@
 <div class="container-fluid">
-  <h2 id="headline"><%= @product.name %></h2>
 
-  <div class="row" data-product-id="<%= @product.id %>">
+  <div class="show">
+    <p id="notice"><%= notice %></p>
 
-    <div class="col-sm-12 col-md-4">
-      <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: @product.image_url) %>
-      <%= render 'comments' %>
-    </div><!-- End div class col -->
+    <div class="row">
 
-    <div class="col-sm-12 col-md-8">
+      <div class="col-sm-12 col-md-4">
+        <%= link_to 'Back to Products', products_path, class: "btn btn-default" %>
+        <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: @product.image_url) %>
+
+      </div><!-- End div class col -->
+
+      <div class="col-sm-12 col-md-8">
       <h4>
-        <%= @product.description %>
+        <strong>Name:</strong>
+        <%= @product.name %>
       </h4>
+
       <h4>
-        <strong>Colour: </strong>
+       <strong>Description:</strong>
+        <%= @product.description %>
+       </h4>
+
+      <h4>
+        <strong>Colour:</strong>
         <%= @product.colour %>
       </h4>
 
-      <h4><%= number_to_currency(@product.price) %></h4>
-
-      <hr>
-
-      <!-- Adding a review -->
-      <%= render 'new_comment' %>
-      <!-- higest rating product
-      <h4 class="product-info-text"> Highest Rating: <%= @product.highest_rating_comment %></h4>-->
-      <br >
-
-      <h4>Highest Rating:
-      <div class="rated" data-score="<%= @product.highest_rating_comment.try(:rating) %>"></div>
+      <h4>
+        <strong>Price:</strong>
+        <%= @product.price %>
       </h4>
 
-      <h4>Lowest Rating:
-      <div class="rated" data-score="<%= @product.lowest_rating_comment.try(:rating) %>"></div>
-      </h4>
+      <h4>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </h4>
 
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-  <%= link_to 'Back', products_path %>
+     </div><!-- End div class col -->
 
-  </div><!-- End div class container-fluid -->
-</div><!-- End div class container-fluid -->
+    </div><!-- End div class row -->
+
+    <hr>
+    <h4>Latest customers reviews: </h4>
+    <%= render partial: "new_comment" %>
+
+    <%= render partial: "comments" %>
+
+    <br>
+
+    <%= link_to 'Edit', edit_product_path(@product) , class: "btn btn-default" %>
+    <%= link_to 'Back', products_path, class: "btn btn-default" %>
+
+  </div><!-- End div class show -->
+
+</div><!-- End div class container fluid -->
