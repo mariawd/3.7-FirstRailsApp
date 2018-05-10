@@ -39,10 +39,11 @@
     </div><!-- End div class row -->
 
     <hr>
-    <h4>Latest customers reviews: </h4>
-    <%= render partial: "new_comment" %>
 
+    <%= render partial: "new_comment" %>
+    <h4>Latest customers reviews: </h4>
     <%= render partial: "comments" %>
+    <%=will_paginate @comments %>
 
     <br>
 
