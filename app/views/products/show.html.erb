@@ -55,4 +55,9 @@
 
   </div><!-- End div class show -->
 
+  <div class="pagination-container">
+      <%=will_paginate @products, renderer: BootstrapPagination::Rails %>
+  </div>
+  <br>
+  
 </div><!-- End div class container fluid -->
