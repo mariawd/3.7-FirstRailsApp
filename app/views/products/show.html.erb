@@ -43,7 +43,10 @@
     <%= render partial: "new_comment" %>
     <h4>Latest customers reviews: </h4>
     <%= render partial: "comments" %>
-    <%=will_paginate @comments %>
+
+    <div class="pagination-container">
+      <%=will_paginate @comments, renderer: BootstrapPagination::Rails %>
+    </div>
 
     <br>
 
