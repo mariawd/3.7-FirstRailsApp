@@ -1,14 +1,18 @@
 <h1 id="headline">Orders</h1>
 
-<div class="row">
-  <% @orders.each do |order| %>
-    <div class="col-sm-2 col-md-4">
-      <h1>
-        Order # <%= order.id %>:
-        <%= link_to order.product.name, order %>
-      </h1>
-      <p><%= order.product.description %></p>
-      <p>$ <%= order.product.price %></p>
-    </div><!-- /col -->
-  <% end %>
-</div>
+<div class="container"
+
+  <div class="row">
+    <% @orders.each do |order| %>
+      <div class="col-sm-2 col-md-4">
+        <h1>
+          Order # <%= order.id %>:
+          <%= link_to order.product.name, order %>
+        </h1>
+        <p><%= order.product.description %></p>
+        <p>Total: <%= number_to_currency(order.total, unit: "€") %></p>
+      </div><!-- End col -->
+    <% end %>
+  </div><!-- End div row -->
+
+</div><!-- End div container-->

@@ -7,7 +7,8 @@
 
       <div class="col-sm-12 col-md-4">
         <%= link_to 'Back to Products', products_path, class: "btn btn-default" %>
-        <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: @product.image_url) %>
+        <br>
+        <%= image_tag(@product.image_url) %>
 
       </div><!-- End div class col -->
 
@@ -55,9 +56,6 @@
 
   </div><!-- End div class show -->
 
-  <div class="pagination-container">
-      <%=will_paginate @products, renderer: BootstrapPagination::Rails %>
-  </div>
   <br>
-  
+
 </div><!-- End div class container fluid -->
