@@ -21,9 +21,9 @@ describe UsersController, type: :controller do
       context 'when a user is not logged in' do
         it 'redirects to login' do
           get :show, params: { id: user.id }
+        end
           expect(response).to redirect_to(new_user_session_path)
         end
-      end
 
       it 'other users show page restricted' do
         get :show, params: { id: user2.id }
