@@ -18,20 +18,20 @@ describe UsersController, type: :controller do
         expect(assigns(:user)).to eq user
       end
 
-      context 'when a user is not logged in' do
-        it 'redirects to login' do
-          get :show, params: { id: user.id }
-        end
-          expect(response).to redirect_to(new_user_session_path)
-        end
-
       it 'other users show page restricted' do
         get :show, params: { id: user2.id }
         expect(response).to have_http_status(302)
         expect(response).to redirect_to(root_path)
       end
-
     end
-  end
 
+
+      context 'when a user is not logged in' do
+        it 'redirects to login' do
+          get :show, params: { id: user.id }
+          expect(response).to redirect_to(new_user_session_path)
+        end
+      end
+  end
+  
 end
