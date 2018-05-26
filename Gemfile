@@ -25,12 +25,11 @@ gem 'jbuilder', '~> 2.5'
 # Added gems
 #Users authentication
 gem 'devise'
-
 gem 'cancancan', '~> 1.10'
-
 gem 'will_paginate', '~> 3.1.1'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'rails-controller-testing'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -43,6 +42,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.7'
+  gem "factory_bot_rails", "~> 4.0"
 end
 
 group :development do
