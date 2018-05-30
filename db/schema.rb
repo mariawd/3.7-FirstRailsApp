@@ -38,7 +38,8 @@ ActiveRecord::Schema.define(version: 20180511090258) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "colour"
-    t.decimal   "price"
+    t.string   "price"
+    t.string   "decimal"
   end
 
   create_table "users", force: :cascade do |t|
