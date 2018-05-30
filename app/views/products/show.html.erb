@@ -1,10 +1,11 @@
-<div class="container-fluid">
+<div class="container-fluid" id="show">
   <br>
   <div class="show">
 
     <div class="row">
 
       <div class="col-sm-12 col-md-4">
+        <br>
         <%= link_to 'Back to Products', products_path, class: "btn btn-default" %>
         <br>
         <%= image_tag(@product.image_url) %>
@@ -35,7 +36,7 @@
 
       <h4>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </h4>
 
-      <%= form_tag(url: '/payments/create') do |form| %>
+      <%= form_tag "/payments/create" do %>
         <%= render partial: "shared/stripe_checkout_button" %>
       <% end %>
 
