@@ -37,6 +37,7 @@
       <h4>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </h4>
 
       <%= form_tag "/payments/create" do %>
+        <%= hidden_field_tag(:product_id, @product.id) %>
         <%= render partial: "shared/stripe_checkout_button" %>
       <% end %>
 
@@ -45,10 +46,13 @@
     </div><!-- End div class row -->
 
     <hr>
+    <div class="comments">
 
-    <%= render partial: "new_comment" %>
-    <h4>Latest customers reviews: </h4>
-    <%= render partial: "comments" %>
+      <%= render partial: "new_comment" %>
+      <h4>Latest customers reviews: </h4>
+      <%= render partial: "comments" %>
+
+    </div><!-- End div class show -->
 
     <div class="pagination-container">
       <%=will_paginate @comments, renderer: BootstrapPagination::Rails %>
