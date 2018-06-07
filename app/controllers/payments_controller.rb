@@ -1,7 +1,9 @@
 class PaymentsController < ApplicationController
 
   def create
-    byebug
+    if Rails.env.production?
+      byebug
+    end
     token = params[:stripeToken]
     @product = Product.find(params[:product_id])
     @user = current_user
