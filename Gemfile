@@ -30,6 +30,7 @@ gem 'will_paginate', '~> 3.1.1'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'rails-controller-testing'
 gem 'stripe'
+gem "brakeman"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
