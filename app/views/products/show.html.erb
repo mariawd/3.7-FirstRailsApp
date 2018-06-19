@@ -14,25 +14,28 @@
 
       <div class="col-sm-12 col-md-8">
       <br>
-      <h4>
-        <strong>Name:</strong>
-        <%= @product.name %>
-      </h4>
+      <% cache @product do %>
+        <h4>
+          <strong>Name:</strong>
+          <%= @product.name %>
+        </h4>
 
-      <h4>
-       <strong>Description:</strong>
-        <%= @product.description %>
-       </h4>
+        <h4>
+         <strong>Description:</strong>
+          <%= @product.description %>
+         </h4>
 
-      <h4>
-        <strong>Colour:</strong>
-        <%= @product.colour %>
-      </h4>
+        <h4>
+          <strong>Colour:</strong>
+          <%= @product.colour %>
+        </h4>
 
-      <h4>
-        <strong>Price:</strong>
-        <%= @product.price %>
-      </h4>
+      <% end %>
+
+        <h4>
+          <strong>Price:</strong>
+          <%= @product.price %>
+        </h4>
 
       <h4>
         Average Rating:

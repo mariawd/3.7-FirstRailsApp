@@ -1,4 +1,5 @@
 <% cache product do %>
+
 <div class="col-lg-4 col-sm-12 product-container">
 
   <% logger.debug "Product: #{product.name}" %>
@@ -9,10 +10,12 @@
   <div class="product-img-container">
     <%= link_to image_tag(product.image_url, class: "img-responsive"), product_path(product) %>
   </div>
+
   <div class="product-title">
     <h3><%= product.name %></h3>
     <p><%= number_to_currency(product.price, unit: "€") %></p>
   </div>
 
 </div>
+
 <% end %>
