@@ -2,11 +2,12 @@
   <br>
   <div class="show">
 
-    <div class="row">
+    <div class="row" data-product-id="<%= @product.id %>" >
 
       <div class="col-sm-12 col-md-4">
         <br>
         <%= link_to 'Back to Products', products_path, class: "btn btn-default" %>
+        <br>
         <br>
         <%= image_tag(@product.image_url, width: "350", class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") %>
 
@@ -58,7 +59,7 @@
       <h4>Latest customers reviews: </h4>
 
       <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-      
+
       <%= render partial: "comments" %>
 
     </div><!-- End div class show -->
