@@ -25,20 +25,23 @@ require 'rails_helper'
     end
 
     context "GET #show" do
+      before do
+        @product = Product.create(name: "Testing Bike Berlin", description: "test", colour: "red", price: 100)
+      end
       it 'renders the show page' do
-      get :show, params: {id: product.id}
-      expect(response).to be_ok
-      expect(response).to render_template('show')
+        get :show, params: {id: @product.id}
+        expect(response).to be_ok
+        expect(response).to render_template('show')
+      end
     end
 
     context "POST #create" do
-    before do
-      @user = FactoryBot.create(:user)
+      before do
+        @user = FactoryBot.create(:user)
       end
     end
 
     context "POST #update" do
-
       before do
         @product = Product.create(name: "Testing Bike Berlin", description: "test", colour: "red", price: 100)
       end
@@ -49,4 +52,5 @@ require 'rails_helper'
         @product = Product.create(name: "Test", description: "test", colour: "red", price: 100)
       end
     end
+
 end

@@ -6,4 +6,4 @@ test:
 
 production:
   adapter: postgresql
-  url: postgres://bzjhqluffobfne:29302f1d15e5c12363812fa20e3a292d5ce7b3d5499e0c58b034f94e544b64b7@ec2-174-129-206-173.compute-1.amazonaws.com:5432/d8vl64mbht261i
+  url: <% ENV["DATABASE_URL"] %>
